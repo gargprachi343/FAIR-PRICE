@@ -1,0 +1,32 @@
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border-radius: 3px;
+}
+.heart {
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+    color: white;
+    }
+
+.heart.active {
+color: red;
+} 
+
+.text-2xl md:text-3xl font-semibold tracking-wide{
+
+}
+
+header {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  background-color: #1a1a4b;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+  z-index: 100; /* Value greater than 2 as requested */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}

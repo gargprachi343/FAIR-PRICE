@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+/* Hero Section with Background */
+.hero {
+    height: 100vh;
+    width: 100%;
+    background-image: url('./assets/Handicrafts1main.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.hero-content {
+    position: absolute;
+    bottom: 50px;
+    left: 50px;
+    color: white;
+    max-width: 600px;
+}
+
+.hero-content h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.explore-btn {
+    background-color: #e63946;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.explore-btn:hover {
+    background-color: #c1121f;
+    transform: translateY(-3px);
+}
+
+/* Header Styles */
+header {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background-color: #1a1a4b;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    z-index: 100; /* Value greater than 2 as requested */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.header-title {
+    font-size: 2.5rem;
+    letter-spacing: 2px;
+}
+
+/* Navigation Styles */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+    background-color: rgba(255, 255, 255, 0.9);
+    height: 60px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.left-nav ul,
+.right-nav ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+.nav-item {
+    cursor: pointer;
+    padding: 10px 15px;
+    transition: all 0.3s ease;
+    font-weight: 500;
+}
+
+.nav-item:hover {
+    color: #e63946;
+}
+
+.button {
+    background-color: #1a1a4b;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.button:hover {
+    background-color: #e63946;
+    transform: translateY(-2px);
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    nav {
+        padding: 0 20px;
+        flex-direction: column;
+        height: auto;
+    }
+
+    .left-nav ul,
+    .right-nav ul {
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+        padding: 10px 0;
+    }
+
+    .hero-content {
+        left: 20px;
+        right: 20px;
+        bottom: 30px;
+        background-color: ;
+    }
+
+    .hero-content h2 {
+        font-size: 1.8rem;
+    }
+}

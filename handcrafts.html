@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Traditional Crafts Shop</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="./styles/handcrafts.css">
+</head>
+<body class="bg-white font-sans">
+
+  <!-- Header -->
+  <header class="bg-[#4b0000] text-white text-center py-6 shadow-lg relative">
+    <h1 class="text-2xl md:text-3xl font-semibold tracking-wide">WHAT’S ON YOUR MIND TODAY</h1>
+    <div class="absolute right-4 top-4 flex space-x-4 text-white text-2xl">
+      <button id="heartBtn" class="heart">🤍</button>
+      <button title="Cart">🛒</button>
+    </div>
+  </header>
+
+  <!-- Navigation -->
+<nav class="bg-[#f1dddd] text-gray-700 shadow-md relative z-10">
+    <div class="flex justify-between items-center px-4 py-3 md:hidden">
+      <div class="text-lg font-semibold uppercase">Menu</div>
+      <button id="navToggle" class="text-2xl focus:outline-none">☰</button>
+    </div>
+  
+    <ul id="navMenu" class="hidden md:flex justify-center space-x-4 md:space-x-6 text-base md:text-lg uppercase font-semibold py-2 md:py-3">
+      <!-- Products with dropdown -->
+      <li class="relative group">
+        <a href="#" class="block px-4 py-2 hover:text-[#4b0000]">Products</a>
+        <ul class="absolute hidden group-hover:block bg-white shadow-lg mt-2 rounded text-left min-w-[200px] text-sm">
+          <li class="px-4 py-2 hover:bg-gray-100">⭐ Clothes</li>
+          <li class="px-4 py-2 hover:bg-gray-100">⭐ Pottery</li>
+          <li class="px-4 py-2 hover:bg-gray-100">⭐ Bamboo Handicrafts</li>
+          <li class="px-4 py-2 hover:bg-gray-100">⭐ Cereals</li>
+          <li class="px-4 py-2 hover:bg-gray-100">⭐ Printing Art</li>
+        </ul>
+      </li>
+      <li><a href="#" class="block px-4 py-2">About Us</a></li>
+      <li><a href="#" class="block px-4 py-2">Reviews</a></li>
+      <li><a href="#" class="block px-4 py-2">Contact Us</a></li>
+    </ul>
+  </nav>
+  
+
+  <!-- Layout -->
+  <div class="md:flex">
+
+    <!-- Mobile Sidebar Toggle -->
+    <div class="md:hidden px-4 pt-4">
+      <button id="sidebarToggle" class="text-sm font-semibold text-white bg-[#4b0000] px-3 py-2 rounded-md">
+        Toggle Categories
+      </button>
+      <div id="mobileSidebar" class="hidden mt-3 bg-gray-100 p-4 rounded shadow">
+        <h2 class="text-base font-bold mb-2">ALL PRODUCTS</h2>
+        <ul class="space-y-2 text-sm">
+          <li class="flex items-center gap-2">⭐ Clothes</li>
+          <li class="flex items-center gap-2">⭐ Pottery</li>
+          <li class="flex items-center gap-2">⭐ Bamboo Handicrafts</li>
+          <li class="flex items-center gap-2">⭐ Cereals</li>
+          <li class="flex items-center gap-2">⭐ Printing Art</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Main Content -->
+    <main>
+      <img src="/assets/Handicraft 2 1.png" class="object-cover w-full h-full rounded" alt="Craft Image 1" />
+    </main>
+
+  </div>
+
+  <!-- JavaScript Interactivity -->
+  <script src="./scripts/handcrafts.js">
+  </script>
+
+</body>
+</html>
