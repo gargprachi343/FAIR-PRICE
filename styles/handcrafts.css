@@ -30,3 +30,19 @@ header {
   z-index: 100; /* Value greater than 2 as requested */
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
+
+.image-grid {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh; /* full height */
+  z-index: -1; /* behind everything */
+  overflow: hidden;
+}
+
+.image-grid img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}

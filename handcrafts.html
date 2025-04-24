@@ -14,7 +14,7 @@
     <h1 class="text-2xl md:text-3xl font-semibold tracking-wide">WHAT’S ON YOUR MIND TODAY</h1>
     <div class="absolute right-4 top-4 flex space-x-4 text-white text-2xl">
       <button id="heartBtn" class="heart">🤍</button>
-      <button title="Cart">🛒</button>
+      <button title="Cart"><a href="./cart.html">🛒</a></button>
     </div>
   </header>
 
@@ -27,14 +27,14 @@
   
     <ul id="navMenu" class="hidden md:flex justify-center space-x-4 md:space-x-6 text-base md:text-lg uppercase font-semibold py-2 md:py-3">
       <!-- Products with dropdown -->
-      <li class="relative group">
-        <a href="#" class="block px-4 py-2 hover:text-[#4b0000]">Products</a>
-        <ul class="absolute hidden group-hover:block bg-white shadow-lg mt-2 rounded text-left min-w-[200px] text-sm">
-          <li class="px-4 py-2 hover:bg-gray-100">⭐ Clothes</li>
-          <li class="px-4 py-2 hover:bg-gray-100">⭐ Pottery</li>
-          <li class="px-4 py-2 hover:bg-gray-100">⭐ Bamboo Handicrafts</li>
-          <li class="px-4 py-2 hover:bg-gray-100">⭐ Cereals</li>
-          <li class="px-4 py-2 hover:bg-gray-100">⭐ Printing Art</li>
+      <li class="relative" id="productsDropdown">
+        <button id="productsToggle" class="block px-4 py-2 hover:text-[#4b0000] focus:outline-none">Products</button>
+        <ul id="dropdownMenu" class="absolute left-0 hidden flex-col bg-white shadow-lg mt-2 rounded text-left min-w-[200px] text-sm z-20">
+          <li class="px-4 py-2 hover:bg-gray-100"><a href="./clothes.html">⭐ Clothes</a></li>
+          <li class="px-4 py-2 hover:bg-gray-100"><a href="./pottery.html">⭐ Pottery</a></li>
+          <li class="px-4 py-2 hover:bg-gray-100"><a href="./bamboo.html">⭐ Bamboo Handicrafts</a></li>
+          <li class="px-4 py-2 hover:bg-gray-100"><a href="./cereals.html">⭐ Cereals</a></li>
+          <li class="px-4 py-2 hover:bg-gray-100"><a href="./paintings.html">⭐ Printing Art</a></li>
         </ul>
       </li>
       <li><a href="#" class="block px-4 py-2">About Us</a></li>
@@ -54,7 +54,7 @@
       </button>
       <div id="mobileSidebar" class="hidden mt-3 bg-gray-100 p-4 rounded shadow">
         <h2 class="text-base font-bold mb-2">ALL PRODUCTS</h2>
-        <ul class="space-y-2 text-sm">
+        <!-- <ul class="space-y-2 text-sm"> -->
           <li class="flex items-center gap-2">⭐ Clothes</li>
           <li class="flex items-center gap-2">⭐ Pottery</li>
           <li class="flex items-center gap-2">⭐ Bamboo Handicrafts</li>
@@ -66,7 +66,9 @@
 
     <!-- Main Content -->
     <main>
-      <img src="/assets/Handicraft 2 1.png" class="object-cover w-full h-full rounded" alt="Craft Image 1" />
+      <div class="image-grid">
+        <img src="/assets/Handicraft 2 1.png" class="object-cover" alt="Craft Image 1" />
+      </div>     
     </main>
 
   </div>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Product Submission</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="./styles/productform.css" />
+</head>
+<body class="bg-white text-gray-800 p-6">
+  <script src= "./styles/productform.css"></script>
+  <div class="max-w-2xl mx-auto p-6 border rounded-lg shadow-md">
+    <form id="productForm" class="space-y-4">
+      <div>
+        <label class="block font-medium mb-1">Name</label>
+        <input type="text" class="form-input" placeholder="Value" required />
+      </div>
+
+      <div>
+        <label class="block font-medium mb-1">Surname</label>
+        <input type="text" class="form-input" placeholder="Value" required />
+      </div>
+
+      <div>
+        <label class="block font-medium mb-1">Location/ Address</label>
+        <input type="text" class="form-input" placeholder="Value" required />
+      </div>
+
+      <div>
+        <label class="block font-medium mb-1">Number to receive payment</label>
+        <input type="text" class="form-input" placeholder="Value" required />
+      </div>
+
+      <div>
+        <label class="block font-medium mb-1">Message for Product</label>
+        <textarea class="form-input resize-none" placeholder="Value" required ></textarea>
+      </div>
+
+      <div>
+        <label class="block font-medium mb-1">Add image of your Product</label>
+        <input type="file" accept="image/*" class="mt-2" />
+        <div class="mt-2 w-24 h-24 border border-dashed flex justify-center items-center rounded">
+          <img id="previewImage" src="https://img.icons8.com/ios/100/image--v1.png" class="w-10 h-10 opacity-50" alt="Upload icon"/>
+        </div>
+      </div>
+
+      <button type="submit" class="mt-4 bg-purple-600 text-white px-4 py-2 rounded hover:bg-purple-700">
+        Submit
+      </button>
+    </form>
+  </div>
+
+  
+</body>
+</html>

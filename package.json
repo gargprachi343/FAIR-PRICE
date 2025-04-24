@@ -11,5 +11,18 @@
   "description": "",
   "devDependencies": {
     "tailwindcss": "^4.1.4"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gargprachi343/FAIR-PRICE.git"
+  },
+  "bugs": {
+    "url": "https://github.com/gargprachi343/FAIR-PRICE/issues"
+  },
+  "homepage": "https://github.com/gargprachi343/FAIR-PRICE#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^5.1.0",
+    "mongoose": "^8.13.2"
   }
 }

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Checkout</title>
+  <link rel="stylesheet" href="./styles/checkout.css" />
+</head>
+<body>
+  <div class="progress-bar">
+    <div class="step done">Cart</div>
+    <div class="step current">Checkout</div>
+    <div class="step">Payment</div>
+  </div>
+
+  <div class="container">
+    <h1>Checkout</h1>
+    <ul id="cart-list"></ul>
+    <div class="total" id="total">Total: ₹0</div>
+
+    <form id="checkout-form">
+      <div class="field">
+        <input type="text" id="name" placeholder="Name" required />
+        <button type="button" 
+                onmousedown="startVoiceInput('name')" 
+                onmouseup="stopVoiceInput()" 
+                ontouchstart="startVoiceInput('name')" 
+                ontouchend="stopVoiceInput()">🎤</button>
+      </div>
+      
+      <div class="field">
+        <input type="text" id="contact" placeholder="Contact Number" required pattern="\d{10}" title="Please enter exactly 10 digits" />
+        <button type="button" 
+                onmousedown="startVoiceInput('contact')" 
+                onmouseup="stopVoiceInput()" 
+                ontouchstart="startVoiceInput('contact')" 
+                ontouchend="stopVoiceInput()">🎤</button>
+      </div>
+
+      <div class="field">
+        <input type="text" id="address1" placeholder="Street Address" required />
+        <button type="button" 
+                onmousedown="startVoiceInput('address1')" 
+                onmouseup="stopVoiceInput()" 
+                ontouchstart="startVoiceInput('address1')" 
+                ontouchend="stopVoiceInput()">🎤</button>
+      </div>
+
+      <div class="field">
+        <input type="text" id="address2" placeholder="City" required />
+        <button type="button" 
+                onmousedown="startVoiceInput('address2')" 
+                onmouseup="stopVoiceInput()" 
+                ontouchstart="startVoiceInput('address2')" 
+                ontouchend="stopVoiceInput()">🎤</button>
+      </div>
+
+      <div class="field">
+        <input type="text" id="address3" placeholder="State" required />
+        <button type="button" 
+                onmousedown="startVoiceInput('address3')" 
+                onmouseup="stopVoiceInput()" 
+                ontouchstart="startVoiceInput('address3')" 
+                ontouchend="stopVoiceInput()">🎤</button>
+      </div>
+
+      <div class="field">
+        <input type="text" id="address4" placeholder="Zip Code" required pattern="\d{6}" title="Please enter a valid 6-digit zip code" />
+      </div>
+      
+      <div class="field">
+        <input type="email" id="email" placeholder="Email" required />
+        <button type="button" 
+                onmousedown="startVoiceInput('email')" 
+                onmouseup="stopVoiceInput()" 
+                ontouchstart="startVoiceInput('email')" 
+                ontouchend="stopVoiceInput()">🎤</button>
+      </div>
+
+      <button type="submit">Continue to Payment</button>
+    </form>
+  </div>
+
+  <script src="./scripts/checkout.js"></script>
+</body>
+</html>
