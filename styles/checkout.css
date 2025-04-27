@@ -113,3 +113,16 @@ body {
   .progress-bar .step.current::before {
     background: #660000;
   }
+
+  .progress-bar .step.done a{
+    color: #660000;
+    text-decoration: none;
+  }
+
+  .progress-bar .step.done a:hover {
+      color: #660000;
+  }
+
+  .progress-bar .step.done a:visited {
+    color: #660000;
+}

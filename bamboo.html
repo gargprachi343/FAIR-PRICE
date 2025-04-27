@@ -5,23 +5,23 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Traditional Clothes</title>
   <link rel="stylesheet" href="./styles/dropdown.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
   <header>
-    <div class="top-bar">
-      <h1>    WHAT’S ON YOUR MIND TODAY</h1>
-      <div class="icons">
-        <span id="like">♡</span>
-        <span id="cart">🛒</span>
+    <div class="bg-[#4b0000] text-white text-center py-6 shadow-lg relative">
+      <h1 class="text-2xl md:text-3xl font-semibold tracking-wide"> WHAT’S ON YOUR MIND TODAY</h1>
+      <div class="absolute right-4 top-4 flex space-x-4 text-white text-2xl">
+        <button id="heartBtn" class="heart">🤍</button>
+        <button title="Cart"><a href="./cart.html">🛒</a></button>
       </div>
     </div>
     <nav class="navbar">
-      <a href="#">PRODUCTS</a>
-      <a href="#">ORDERS</a>
-      <a href="#">ABOUT US</a>
-      <a href="#">REVIEWS</a>
+      <a href="./handcrafts.html">PRODUCTS</a>
+      <a href="./aboutus.html">ABOUT US</a>
+      <a href="./reviews.html">REVIEWS</a>
       <a href="#">OFFERS</a>
-      <a href="#">CONTACT US</a>
+      <a href="./aboutus.html#contactUs">CONTACT US</a>
     </nav>
     <h2 class="section-title">BAMBOO CRAFTS</h2>
   </header>
@@ -30,15 +30,15 @@
     <!-- Product cards -->
     <div class="product-card">
       <div class="img-placeholder">
-        <img src ="./assests/bamboo basket.jpeg" alt="bamboo basket" />
+        <img src ="./assets/bamboo basket.jpeg" alt="bamboo basket" />
       </div>
-      <h3>Bamboo Basket <br><span>Rs 1200</span></h3>
+      <h3>Bamboo Basket <br><span>Rs 120</span></h3>
       <p>In traditional societies, bamboo baskets are used for multiple purposes, like storing grains and carrying purposes in the fields</p>
     </div>
 
     <div class="product-card">
       <div class="img-placeholder">
-        <img src ="assests/bamboo lamp.jpeg" alt="Ceramic" />
+        <img src ="./assets/bamboo lamp.jpeg" alt="Ceramic" />
       </div>
       <h3>Bamboo Lamp <br><span>Rs 750</span></h3>
       <p>Bamboo lamps are not just environmentally friendly; they are also visually appealing.</p>
@@ -46,7 +46,7 @@
 
     <div class="product-card">
       <div class="img-placeholder">
-        <img src="assests/flower vase.jpeg" alt="Himachal Pottery" />
+        <img src="./assets/flower vase.jpeg" alt="Himachal Pottery" />
       </div>
       <h3>Bamboo Flower Vase <br><span>Rs 1000</span></h3>
       <p>With its rustic, natural beauty and diverse designs, bamboo vases help decorate living spaces, increasing the aesthetics of homes, offices, cafes, etc</p>
@@ -54,7 +54,7 @@
 
     <div class="product-card">
       <div class="img-placeholder">
-        <img src="assests/wall hanging.jpeg" alt="Kagzi" />
+        <img src="./assets/wall hanging.jpeg" alt="Kagzi" />
       </div>
       <h3>Bamboo Wall Hanging <br><span>Rs 1100</span></h3>
       <p></p>Bamboo furniture is an ideal way to make your home decor more attractive. Adding its natural, organic appeal gives any room a touch of elegance and warmth.

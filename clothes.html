@@ -5,23 +5,23 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Traditional Clothes</title>
   <link rel="stylesheet" href="./styles/dropdown.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
   <header>
-    <div class="top-bar">
-      <h1>WHAT’S ON YOUR MIND TODAY</h1>
-      <div class="icons">
-        <span id="like">♡</span>
-        <span id="cart">🛒</span>
+    <div class="bg-[#4b0000] text-white text-center py-6 shadow-lg relative">
+      <h1 class="text-2xl md:text-3xl font-semibold tracking-wide"> WHAT’S ON YOUR MIND TODAY</h1>
+      <div class="absolute right-4 top-4 flex space-x-4 text-white text-2xl">
+        <button id="heartBtn" class="heart">🤍</button>
+        <button title="Cart"><a href="./cart.html">🛒</a></button>
       </div>
     </div>
     <nav class="navbar">
-      <a href="#">PRODUCTS</a>
-      <a href="#">ORDERS</a>
-      <a href="#">ABOUT US</a>
-      <a href="#">REVIEWS</a>
+      <a href="./handcrafts.html">PRODUCTS</a>
+      <a href="./aboutus.html">ABOUT US</a>
+      <a href="./reviews.html">REVIEWS</a>
       <a href="#">OFFERS</a>
-      <a href="#">CONTACT US</a>
+      <a href="./aboutus.html#contactUs">CONTACT US</a>
     </nav>
     <h2 class="section-title">CLOTHES</h2>
   </header>
@@ -30,7 +30,7 @@
     <!-- Product cards -->
     <div class="product-card">
       <div class="img-placeholder">
-        <img src ="./assests/pashmina.webp" alt="Pashmina Shawl" />
+        <img src ="./assets/pashmina.webp" alt="Pashmina Shawl" />
       </div>
       <h3>PASHMINA <br><span>Rs 12000</span></h3>
       <p>The shawls are handcrafted, often with intricate designs and patterns, and are a symbol of elegance and heritage, particularly in Kashmir.</p>
@@ -38,7 +38,7 @@
 
     <div class="product-card">
       <div class="img-placeholder">
-        <img src ="assests/chikankari.avif" alt="Chikankari" />
+        <img src ="./assets/chikankari.avif" alt="Chikankari" />
       </div>
       <h3>CHIKANKARI <br><span>Rs 7500</span></h3>
       <p>It involves delicate and intricate white threadwork on fine muslin or other fabrics, creating intricate patterns and designs.</p>
@@ -46,7 +46,7 @@
 
     <div class="product-card">
       <div class="img-placeholder">
-        <img src="assests/kanjivaram.jpeg" alt="Kanjivaram" />
+        <img src="./assets/kanjivaram.jpeg" alt="Kanjivaram" />
       </div>
       <h3>KANJIVARAM <br><span>Rs 10000</span></h3>
       <p>Kanjivaram sarees are renowned for their South Indian origin and are made from pure mulberry silk, known for its heavy and lustrous texture.</p>
@@ -54,7 +54,7 @@
 
     <div class="product-card">
       <div class="img-placeholder">
-        <img src="assests/kantha.jpeg" alt="Kantha" />
+        <img src="./assets/kantha.jpeg" alt="Kantha" />
       </div>
       <h3>KANTHA <br><span>Rs 11000</span></h3>
       <p>The traditional folk art was popular in Bengal and has been especially used in quilting since its early days.</p>
@@ -62,7 +62,7 @@
 
     <div class="product-card">
       <div class="img-placeholder">
-        <img src="assests/banarasi.webp" alt="Banarasi Saree" />
+        <img src="./assets/banarasi.webp" alt="Banarasi Saree" />
       </div>
       <h3>Banarasi Saree <br><span>Rs 14000</span></h3>
       <p>Banaras Zardozi embroidery uses gold and silver threads, and precious stones to embellish fabrics.</p>
@@ -70,7 +70,7 @@
 
     <div class="product-card">
       <div class="img-placeholder">
-        <img src="assests/jamdani.jpeg" alt="Jamdani" />
+        <img src="./assets/jamdani.jpeg" alt="Jamdani" />
       </div>
       <h3>JAMDANI <br><span>Rs 8200</span></h3>
       <p>Jamdani is a hand-woven fabric known for its intricate designs and use of fine muslin.</p>

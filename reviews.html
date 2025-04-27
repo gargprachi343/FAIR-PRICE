@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Customer Reviews</title>
+  <link rel="stylesheet" href="./styles/reviews.css" />
+  
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="navbar-header">
+          <div class="navbar-title">Menu</div>
+          <button id="navToggle" class="navbar-toggle">☰</button>
+        </div>
+    
+        <ul id="navMenu" class="navbar-menu">
+          <li><a href="./handcrafts.html" class="navbar-item">Products</a></li>
+          <li><a href="./aboutus.html" class="navbar-item">About Us</a></li>
+          <li><a href="./aboutus.html#contactUs" class="navbar-item">Contact Us</a></li>
+        </ul>
+      </nav>
+
+  <div class="review-container">
+    <h1>Customer Reviews</h1>
+    <form id="review-form">
+      <input type="text" id="name" placeholder="Your name" required />
+      <textarea id="review" placeholder="Write your review here..." required></textarea>
+
+      <div class="star-rating">
+        <label for="star1" class="star">&#9733;</label>
+        <label for="star2" class="star">&#9733;</label>
+        <label for="star3" class="star">&#9733;</label>
+        <label for="star4" class="star">&#9733;</label>
+        <label for="star5" class="star">&#9733;</label>
+      </div>
+
+      <button type="submit">Submit Review</button>
+    </form>
+
+    <div id="reviews-list">
+      <!-- Reviews will appear here -->
+    </div>
+  </div>
+
+  <script src="./scripts/reviews.js"></script>
+</body>
+</html>

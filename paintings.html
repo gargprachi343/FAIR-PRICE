@@ -5,23 +5,23 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Cereals</title>
   <link rel="stylesheet" href="./styles/dropdown.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
   <header>
-    <div class="top-bar">
-      <h1>    WHAT’S ON YOUR MIND TODAY</h1>
-      <div class="icons">
-        <span id="like">♡</span>
-        <span id="cart">🛒</span>
+    <div class="bg-[#4b0000] text-white text-center py-6 shadow-lg relative">
+      <h1 class="text-2xl md:text-3xl font-semibold tracking-wide"> WHAT’S ON YOUR MIND TODAY</h1>
+      <div class="absolute right-4 top-4 flex space-x-4 text-white text-2xl">
+        <button id="heartBtn" class="heart">🤍</button>
+        <button title="Cart"><a href="./cart.html">🛒</a></button>
       </div>
     </div>
     <nav class="navbar">
-      <a href="#">PRODUCTS</a>
-      <a href="#">ORDERS</a>
-      <a href="#">ABOUT US</a>
-      <a href="#">REVIEWS</a>
+      <a href="./handcrafts.html">PRODUCTS</a>
+      <a href="./aboutus.html">ABOUT US</a>
+      <a href="./reviews.html">REVIEWS</a>
       <a href="#">OFFERS</a>
-      <a href="#">CONTACT US</a>
+      <a href="./aboutus.html#contactUs">CONTACT US</a>
     </nav>
     <h2 class="section-title">PAINTINGS</h2>
   </header>
@@ -30,34 +30,38 @@
     <!-- Product cards -->
     <div class="product-card">
       <div class="img-placeholder">
-        <img src ="./assests/madhubani.jpeg" alt="MADHUBANI" />
+        <img src ="./assets/madhubani.jpeg" alt="MADHUBANI" />
       </div>
       <h3>MADHUBANI <br><span>Rs 1200</span></h3>
       <p>Madhubani painting, also known as Mithila painting, is a traditional and intricate style of folk art that originates from the Mithila region of Bihar, India.</p>
+      <button class="add-to-cart-btn">+</button>
     </div>
 
     <div class="product-card">
       <div class="img-placeholder">
-        <img src ="assests/miniature.webp" alt="Rice" />
+        <img src ="./assets/miniature.webp" alt="Miniature art" />
       </div>
       <h3>Miniature <br><span>Rs 750</span></h3>
       <p>Miniature painting's speciality lies in its intricate and detailed brushwork, often on small canvases, using vibrant colors derived from natural sources</p>
+      <button class="add-to-cart-btn">+</button>
     </div>
 
     <div class="product-card">
       <div class="img-placeholder">
-        <img src="assests/pahari.jpeg" alt="Pahari" />
+        <img src="./assets/pahari.jpeg" alt="Pahari" />
       </div>
       <h3>Pahari <br><span>Rs 1000</span></h3>
       <p>Pahari painting, a distinct style of Indian miniature painting, is renowned for its intricate details, vibrant colors, and lyrical quality, particularly its depictions of Radha-Krishna and scenes from the Bhagavad Gita.</p>
+      <button class="add-to-cart-btn">+</button>
     </div>
 
     <div class="product-card">
       <div class="img-placeholder">
-        <img src="./assests/folk art.jpeg" alt="Bajra" />
+        <img src="./assets/folk art.jpeg" alt="Folk art" />
       </div>
       <h3>Folk Art <br><span>Rs 1100</span></h3>
       <p></p>Folk art painting in India is characterized by its vibrant colors, use of natural materials, and depiction of daily life, mythology, and spirituality</p>
+      <button class="add-to-cart-btn">+</button>
     </div>
   </main>
 

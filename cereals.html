@@ -5,23 +5,23 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Cereals</title>
   <link rel="stylesheet" href="./styles/dropdown.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
   <header>
-    <div class="top-bar">
-      <h1>    WHAT’S ON YOUR MIND TODAY</h1>
-      <div class="icons">
-        <span id="like">♡</span>
-        <span id="cart">🛒</span>
+    <div class="bg-[#4b0000] text-white text-center py-6 shadow-lg relative">
+      <h1 class="text-2xl md:text-3xl font-semibold tracking-wide"> WHAT’S ON YOUR MIND TODAY</h1>
+      <div class="absolute right-4 top-4 flex space-x-4 text-white text-2xl">
+        <button id="heartBtn" class="heart">🤍</button>
+        <button title="Cart"><a href="./cart.html">🛒</a></button>
       </div>
     </div>
     <nav class="navbar">
-      <a href="#">PRODUCTS</a>
-      <a href="#">ORDERS</a>
-      <a href="#">ABOUT US</a>
-      <a href="#">REVIEWS</a>
+      <a href="./handcrafts.html">PRODUCTS</a>
+      <a href="./aboutus.html">ABOUT US</a>
+      <a href="./reviews.html">REVIEWS</a>
       <a href="#">OFFERS</a>
-      <a href="#">CONTACT US</a>
+      <a href="./aboutus.html#contactUs">CONTACT US</a>
     </nav>
     <h2 class="section-title">Cereals</h2>
   </header>
@@ -30,7 +30,7 @@
     <!-- Product cards -->
     <div class="product-card">
       <div class="img-placeholder">
-        <img src ="./assests/wheat.jpeg" alt="wheat" />
+        <img src ="./assets/wheat.jpeg" alt="wheat" />
       </div>
       <h3>Wheat <br><span>Rs 1200</span></h3>
       <p>Wheat is a cereal grain, a staple food in many cultures, and a key ingredient in various foods like bread, pasta, and baked goods</p>
@@ -38,7 +38,7 @@
 
     <div class="product-card">
       <div class="img-placeholder">
-        <img src ="assests/rice.jpeg" alt="Rice" />
+        <img src ="./assets/rice.jpeg" alt="Rice" />
       </div>
       <h3>Rice <br><span>Rs 750</span></h3>
       <p>Rice is a cereal grain and in its domesticated form is the staple food of over half of the world's population, particularly in Asia and Africa.</p>
@@ -46,7 +46,7 @@
 
     <div class="product-card">
       <div class="img-placeholder">
-        <img src="assests/ragi.webp" alt="Himachal Pottery" />
+        <img src="./assets/ragi.webp" alt="Himachal Pottery" />
       </div>
       <h3>Ragi <br><span>Rs 1000</span></h3>
       <p>Ragi, also known as finger millet, is a nutritious and versatile grain widely consumed in India and other parts of the world.</p>
@@ -54,7 +54,7 @@
 
     <div class="product-card">
       <div class="img-placeholder">
-        <img src="./assests/bajra.jpeg" alt="Bajra" />
+        <img src="./assets/bajra.jpeg" alt="Bajra" />
       </div>
       <h3>Bajra <br><span>Rs 1100</span></h3>
       <p></p>Pearl millet is the most widely grown type of millet. It has been grown in Africa and the Indian subcontinent since prehistoric times.</p>
@@ -62,7 +62,7 @@
 
     <div class="product-card">
       <div class="img-placeholder">
-        <img src="assests/jowar.jpeg" alt="Jowar" />
+        <img src="./assets/jowar.jpeg" alt="Jowar" />
       </div>
       <h3> Jowar <br><span>Rs 400</span></h3>
       <p>Jowar, also known as sorghum or great millet, is a grain that is gluten-free and high in fiber. </p>

@@ -77,6 +77,7 @@ button:hover {
 
 .cart-actions button a{
     color: white;
+    text-decoration: none;
 }
 
 li button {

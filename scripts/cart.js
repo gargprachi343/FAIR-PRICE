@@ -85,10 +85,12 @@ function removeItem(index) {
 populateCart();
 
 // Checkout button behavior
-checkoutBtn.addEventListener("click", () => {
-  if (cart.length === 0) {
-    alert("Your cart is empty! Add items before proceeding to checkout.");
-  } else {
-    window.location.href = "checkout.html";
-  }
-});
+if (checkoutBtn) {
+  checkoutBtn.addEventListener("click", () => {
+    if (cart.length === 0) {
+      alert("Your cart is empty! Add items before proceeding to checkout.");
+    } else {
+      window.location.href = "checkout.html"; // Replace with your actual checkout page URL
+    }
+  });
+}

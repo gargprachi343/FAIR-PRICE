@@ -5,23 +5,23 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Traditional Clothes</title>
   <link rel="stylesheet" href="./styles/dropdown.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
   <header>
-    <div class="top-bar">
-      <h1>    WHAT’S ON YOUR MIND TODAY</h1>
-      <div class="icons">
-        <span id="like">♡</span>
-        <span id="cart">🛒</span>
+    <div class="bg-[#4b0000] text-white text-center py-6 shadow-lg relative">
+      <h1 class="text-2xl md:text-3xl font-semibold tracking-wide"> WHAT’S ON YOUR MIND TODAY</h1>
+      <div class="absolute right-4 top-4 flex space-x-4 text-white text-2xl">
+        <button id="heartBtn" class="heart">🤍</button>
+        <button title="Cart"><a href="./cart.html">🛒</a></button>
       </div>
     </div>
     <nav class="navbar">
-      <a href="#">PRODUCTS</a>
-      <a href="#">ORDERS</a>
-      <a href="#">ABOUT US</a>
-      <a href="#">REVIEWS</a>
+      <a href="./handcrafts.html">PRODUCTS</a>
+      <a href="./aboutus.html">ABOUT US</a>
+      <a href="./reviews.html">REVIEWS</a>
       <a href="#">OFFERS</a>
-      <a href="#">CONTACT US</a>
+      <a href="./aboutus.html#contactUs">CONTACT US</a>
     </nav>
     <h2 class="section-title">Pottery</h2>
   </header>
@@ -30,7 +30,7 @@
     <!-- Product cards -->
     <div class="product-card">
       <div class="img-placeholder">
-        <img src ="./assests/blue pottery.jpeg" alt="blue pottery" />
+        <img src ="./assets/blue pottery.jpeg" alt="blue pottery" />
       </div>
       <h3>Blue Pottery <br><span>Rs 1200</span></h3>
       <p>Blue pottery is widely recognized as a traditional craft of Jaipur of Central Asian origin. The name 'blue pottery' comes from the eye-catching cobalt blue dye used to colour the pottery.</p>
@@ -38,7 +38,7 @@
 
     <div class="product-card">
       <div class="img-placeholder">
-        <img src ="assests/ceramic.jpeg" alt="Ceramic" />
+        <img src ="./assets/ceramic.jpeg" alt="Ceramic" />
       </div>
       <h3>Ceramic <br><span>Rs 750</span></h3>
       <p>Traditional ceramics are clay-based, but high-performance or advanced ceramics are being developed from a far wider range of inorganic non-metal materials.</p>
@@ -46,7 +46,7 @@
 
     <div class="product-card">
       <div class="img-placeholder">
-        <img src="assests/himachal.jpeg" alt="Himachal Pottery" />
+        <img src="./assets/himachal.jpeg" alt="Himachal Pottery" />
       </div>
       <h3>Himanchal pottery <br><span>Rs 1000</span></h3>
       <p>Himachal Pradesh is known for its diverse and vibrant pottery traditions, with Andretta and Dharamshala being notable centers.</p>
@@ -54,7 +54,7 @@
 
     <div class="product-card">
       <div class="img-placeholder">
-        <img src="assests/kagzi.jpeg" alt="Kagzi" />
+        <img src="./assets/kagzi.jpeg" alt="Kagzi" />
       </div>
       <h3>Kagzi <br><span>Rs 1100</span></h3>
       <p></p>Kagzi pottery, a specialty from Alwar, Rajasthan, is known for its exceptional thinness and lightness, resembling paper
@@ -62,7 +62,7 @@
 
     <div class="product-card">
       <div class="img-placeholder">
-        <img src="assests/rajastan.jpeg" alt="Rajasthani pottery" />
+        <img src="./assets/rajastan.jpeg" alt="Rajasthani pottery" />
       </div>
       <h3>Rajasthani Pottery <br><span>Rs 400</span></h3>
       <p>Rajasthan is renowned for its unique pottery, with blue pottery from Jaipur being the most distinctive and globally recognized.</p>
