@@ -11,10 +11,6 @@
     box-shadow: 0 0 0 1px #7c3aed;
   }
 
-  body{
-    background-image: url('/assets/bgDrop.webp');
-  }
-
   .productForm{
     background-color: white;
   }
